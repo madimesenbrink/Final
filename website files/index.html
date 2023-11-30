@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Strwbrry Drmz</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- ADD ALL CONTENT & USE WIREFRAMES TO GUIDE also add a form-->
+        <section id="intro">
+            <h1>STRWBRRY DRMZ</h1>
+            <!-- button for dark/light mode -->
+            <button onclick=toggleDarkMode()><img src="icons8-moon-50.png" alt="icon of moon"></button>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#guessGame">PLay</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </section>
+        <main>
+        <section id="about">
+            <h2>The Boutique of Your Dreams</h2>
+            <img src="strwbrrydrmz_logo.png" alt="logo of girl in dress sitting on a cloud">
+            <p>Express yourself with our unique and trendy accessories.<br>Strwbrry Drmz is a Strawberry Shortcake inspired boutique offering a variety of products for girls of all ages. Everything is handmade with care and aims to provide high-quality, fashionable, and affordable items.</p>
+        </section>
+
+        <section id = "browse">
+            <h3>Browse Items</h3>
+            <button onclick="showItem('strwbrryClip')">Strwbrry Clip</button>
+            <button onclick="showItem('pearlEarring')">Pearl Earrings</button>
+            <button onclick="showItem('heartEarring')">Heart Earrings</button>
+            <button onclick="showItem('lpCover')">License Plate Cover</button>
+            <button onclick="showItem('tankTop')">Signature Tank</button>
+            <button onclick="showItem('phoneCase')">Strwbrry Phone Case</button>
+            <section id ="browseImages">
+                <h3 id = "itemName"></h3>
+                <img id="itemImage" src="" alt="image of displayed item">
+                <p id="itemDetails"></p>
+            </section>
+        </section>
+
+
+        <section id="guessGame">
+            <h4>Play a Quick Game!</h4>
+            <p>Enter any number between 1 and 10: </p>
+            <input type="number" id="random" name="random" min="1" max="10">
+            <button onclick="guessingGame()">Submit</button>
+            <p id="reveal"></p>
+        </section>
+        <section id="connect">
+            <h4>Connect With Us</h4>
+            <form id="userForm" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="GET">
+                <label for="fName">Full Name<span class="required">*</span></label>
+                <input type="text" name="fName" id="fName"><p class="hidden">Please enter a valid name</p>
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone"><p class="hidden">Please enter a valid phone number</p>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email"><p class="hidden">Please enter a valid email address</p>
+                
+                <fieldset>
+                    <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email</label>
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+                
+                <label for="message">Message<span class="required">*</span></label>
+                <textarea name="message" id="message"></textarea><p class="hidden">Please enter a valid message</p>
+                
+                <input type="submit" name="submit" id="submit" value="Submit Form">
+            </form>
+            <p id="confirm" class="hidden"></p>
+        </section>
+        <footer>
+            <p>Copyright &copy;2023 Madison Mesenbrink</p>
+            <p>Educational Purposes Only</p>
+        </footer>
+        </main>
+    </body>
+</html>

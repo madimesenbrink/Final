@@ -1,0 +1,276 @@
+/* ADD ALL STYLES- COLOR, MAYBE RESPONSIVE?, FONT */
+/* css for colors used throughout */
+:root{
+    --crm: #FFFFCC;
+    --lt-pink: #EFA2A4;
+    --red: #FF0000;
+    --green: #156F00;
+    --lt-blue: #C0E7FF;
+    --drk-pink: #C6174D;
+    --med-pink: #FF7FD9;
+}
+/* whole page settings */
+@font-face {
+    font-family: 'myFont';
+    src: url('JUICE___.TTF') format('truetype');
+}
+
+
+
+#intro, h2, h3, h4{
+    font-family: 'myFont';
+} 
+
+body {
+    padding: 25px;
+    background-color: var(--crm);
+    color: var(--drk-pink);
+    font-size: 2em;
+    font-family: Sylfaen;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* css for dark mode */
+.darkMode{
+    background-color: var(--green);
+}
+.darkMode #intro{
+    background-color: var(--med-pink);
+    color: var(--green);
+}
+.darkMode #about{
+    background-color: var(--green);
+    color: var(--med-pink);
+}
+.darkMode #browse{
+    background-color: var(--med-pink);
+    color: var(--green);
+}
+.darkMode #browse button{
+    background-color: var(--green);
+    color: var(--med-pink);
+}
+.darkMode #guessGame{
+    background-color: var(--green);
+    color: var(--med-pink);
+}
+.darkMode #connect{
+    background-color: var(--med-pink);
+    color: var(--green);
+}
+.darkMode footer{
+    background-color: var(--med-pink);
+    color: var(--green);
+}
+.darkMode button{
+    background-color: var(--med-pink);
+    
+}
+.darkMode form input[type="submit"] {
+    background-color: var(--green);
+    color: var(--med-pink);
+}
+/* button styles */
+button{
+    background-color: var(--lt-pink);
+
+}
+
+button img{
+    width: 50%;
+    height: 0;
+}
+
+
+/* get rid of underline and color on hyperlinks */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset some default styles of the browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+#intro {
+    background: var(--lt-pink);
+    color: var(--crm);
+    padding: 10px;
+    display: block;
+}
+
+#intro h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+#intro nav ul {
+    list-style: none;
+    padding: 10px 0;
+    text-align:center;
+    font-size: 2em;
+
+}
+
+#intro nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+/* style about portion */
+#about h2{
+    font-size: 3em;
+    text-align: center;
+}
+#about{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: var(--crm);
+    color: var(--lt-pink);
+    padding: 20px;
+}
+#about p {
+    text-align: center;
+}
+/* style the browse section  */
+#browse h3{
+    font-size: 2em;
+    text-align: center;
+
+}
+#browse{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    color: var(--crm);
+    background-color: var(--lt-pink);
+    padding: 30px;
+    text-align: center;
+}
+#browse button{
+    color: var(--lt-pink);
+    background-color: var(--crm);
+    padding: 5px;
+    margin: 5px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+/* style game */
+#guessGame{
+    background-color: var(--crm);
+    color: var(--lt-pink);
+}
+#guessGame h4{
+    font-size: 1.5em;
+}
+#guessGame button{
+    padding: 5px;
+    color: var(--crm);
+}
+
+
+
+/* Style the main content */
+main {
+    padding: 20px;
+    width: 1280px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2, section h3, section h4 {
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin-bottom: 20px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Style the form */
+#connect{
+    background-color: var(--lt-pink);
+    color: var(--crm);
+    padding: 20px;
+}
+#connect h4{
+    font-size: 3em;
+    text-align: center;
+}
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background: var(--crm);
+    color: var(--lt-pink);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;
+    height: 1.5rem;
+    margin: 0.5rem 0 0 0;
+}
+/* style footer */
+footer{
+    font-size: .5em;
+    text-align: center;
+    background-color: var(--crm);
+    color: var(--lt-pink);
+    padding: 10px;
+}
